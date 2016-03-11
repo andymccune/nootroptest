@@ -16,6 +16,13 @@
        url(../../bower_components/material-design-iconfont/iconfont/MaterialIcons-Regular.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/iq/dist/assets/fonts/AvenirNextLTPro-HeavyCn.otf) format('otf');
+}
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -45,14 +52,55 @@ navbar {
   z-index: 2;
 }
 #logo {
-  max-width: 65px;
+  height: 50px;
 }
+#logo-name {
+  word-spacing: 1px;
+  font-family: Avenir;
+  font-weight: 600;
+  color: #254d80;
+  font-size: 30px;
+  line-height: 50px;
+}
+navbar, #footer {
+  z-index: 5 !important;
+}
+.mdl-button {
+  background: #47cb4a !important;
+  color: #fff !important;
+}
+
+.mdl-layout__header-row {
+  background: #fff;
+}
+
+.bg-color {
+  background: #31a4e5;
+}
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  width: 4699px;
+  z-index: 2;
+  height: calc(100vh - 120px);
+  background: url(/iq/dist/assets/images/bg.png);
+  color: #fff;
+  background-repeat: repeat;
+  background-position: 0 0;
+  transition: opacity .5s ease-out;
+  -webkit-animation: move-slideshow 75s linear infinite;
+  animation: move-slideshow 75s linear infinite;
+}
+@-webkit-keyframes move-slideshow{0%{left:0}100%{left:-3166px}}
+@keyframes move-slideshow{0%{left:0}100%{left:-3166px}}
+
 
 main {
   padding: 20px;
-  background: #fafafa;
-  background: url(/iq/dist/assets/images/bg.png);
-  color: #424242;
+  color: #fff;
+  z-index: 4 !important;
 }
 
 section#home {

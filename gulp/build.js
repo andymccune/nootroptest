@@ -10,7 +10,7 @@ var $ = require('gulp-load-plugins')({
 
 gulp.task('deploy-static', ['build'], function () {
   return gulp.src(path.join(conf.paths.dist, '/index.html'))
-    .pipe($.injectString.before('<title', '<base href="/'+conf.paths.appName+'/'+conf.paths.dist+'/">'))
+    .pipe($.injectString.before('<title', '<base href="/'+conf.paths.dist+'/">'))
     .pipe(gulp.dest(path.join(__dirname, '../')))
 });
 

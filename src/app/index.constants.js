@@ -19,7 +19,7 @@
       {query: 'Which shape does not fit the others?', optionSize: ['57px','57px'], sprite: true, options: ['-540px 0px','-540px -90px','-540px -180px','-540px -270px','-540px -360px'], answer: 0},
       {query: 'Which shape does not fit the others?', optionSize: ['57px','57px'], sprite: true, options: ['-630px 0px','-630px -90px','-630px -180px','-630px -270px','-630px -360px'], answer: 0},
       {query: 'Which shape does not fit the others?', optionSize: ['57px','57px'], sprite: true, options: ['-720px 0px','-720px -90px','-720px -180px','-720px -270px'], answer: 0},
-      {query: 'Select the picture that best fits the white space', body: '-810px 0px', bodySize: ['-810px','0px'], optionSize: ['90px','56px'], sprite: true, options: ['-810px -180px','-810px -270px','-900px -180px','-900px -270px'], answer: 0},
+      {query: 'Select the picture that best fits the white space', body: '-810px 0px', bodySize: ['206px','176px'], optionSize: ['90px','56px'], sprite: true, options: ['-810px -180px','-810px -270px','-900px -180px','-900px -270px'], answer: 0},
       {query: 'Complete the series: \n 1-2-4-7-11-16-22-?', options: ['30','29'], answer: 0},
       {query: 'Complete the series: \n 3-6-10-20-24-?', options: ['40','48'], answer: 0},
       {query: 'Some bracelets are valuable jewelry. \n All bracelets are made of gold. \n \n Which is true for sure?', options: ['Some bracelets are made of silver.','Some valuable jewelery is made of gold.'], answer: 0},

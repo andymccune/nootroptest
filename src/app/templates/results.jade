@@ -1,7 +1,27 @@
+link(href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css")
+style(type="text/css").
+  #mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; width:70%; color: black;position: absolute;top:0;left: 15%;background: white; padding: 25px;}
+  .row {position: relative; width: 100%;}
+  #mce-EMAIL {height: 36px !important;margin-right:4px !important;outline:0;}
+
 section#results.page-content.text-center
   h2.display-2 Well done!
-  h6.title You are {{desc}} average #[br] #[br] Your IQ is:
-  .brain-holder.text-center
-    .brain
-    .brain-fill
-    .score.mdl-color-text--amber {{score}}
+  h6.title Your IQ is:
+  .row
+    .brain-holder.text-center
+      .brain
+      .brain-fill
+      .score.mdl-color-text--amber {{score}}
+
+    #mc_embed_signup.card.mdl-shadow--4dp
+      h4 Too see your score and to get offers on IQ-enhancing #[a(href="https://en.wikipedia.org/wiki/Nootropic" target="_blank") Nootropics], subscribe to our mailing list.
+      // This is an acceptable score, but it could be much better. There is a class of IQ-enhancing supplements #[br] called "#[a(href="https://en.wikipedia.org/wiki/Nootropic" target="_blank") Nootropics]". Their purpose is to elevate your IQ and cognitive clarity. #[br] #[br] 
+      form#mc-embedded-subscribe-form.validate(action="//coast9.us13.list-manage.com/subscribe/post?u=0ae3943f42f6784ec57bd3357&id=6402c62147" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="")
+        #mc_embed_signup_scroll
+          //- label(for="mce-EMAIL") Subscribe to our mailing list
+          input#mce-EMAIL.email(type="email" value="" name="EMAIL" placeholder="Email address" required="")
+          // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+          div(style="position: absolute; left: -5000px;" aria-hidden="true")
+            input(type="text" name="b_0ae3943f42f6784ec57bd3357_6402c62147" tabindex="-1" value="")
+          .clear
+            input#mc-embedded-subscribe.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent(type="submit" value="Subscribe" name="subscribe")

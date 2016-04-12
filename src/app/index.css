@@ -200,6 +200,30 @@ section#results .brain-fill.active {
 }
 
 
+
+@media (max-width: 600px) {
+  #navbar {
+    display: block !important;
+  }
+  .mdl-logo {
+    float: left !important;
+    margin: 5px !important;
+  }
+  .question {
+    font-size: 35px !important;
+    line-height: 38px !important;
+  }
+  #mc_embed_signup {
+    left: auto !important;
+    width: auto !important;
+  }
+  #navbar .mdl-navigation,
+  #footer {
+    display: none !important;
+  }
+}
+
+
   h1, p {
     font-family: "Open Sans" !important;
   }

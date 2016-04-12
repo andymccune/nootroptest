@@ -1,10 +1,10 @@
 section#test.page-content.text-center
   .card
     h2.question.display-2 {{question.query}}
-    .body(ng-if="question.body")
-      h3.display-1(ng-if="!question.sprite") {{question.body}}
-      .sprite(ng-if="question.sprite" ng-style="{'background-position': question.body, width: question.bodySize[0], height: question.bodySize[1]}")
-    button.option.mdl-button.mdl-button--raised.mdl-button--accent(ng-repeat="($oi, o) in question.options track by $oi" ng-click="answerQuestion($oi)")
-      span(ng-if="!question.sprite") {{o}}
-      .sprite(ng-if="question.sprite" ng-style="{'background-position': o, width: question.optionSize[0], height: question.optionSize[1]}")
+    .body(data-ng-if="question.body")
+      h3.display-1(data-ng-if="!question.sprite") {{question.body}}
+      .sprite(data-ng-if="question.sprite" data-ng-style="{'background-position': question.body, width: question.bodySize[0], height: question.bodySize[1]}")
+    button.option.mdl-button.mdl-button--raised.mdl-button--accent(data-ng-repeat="($oi, o) in question.options track by $oi" data-ng-click="answerQuestion($oi)")
+      span(data-ng-if="!question.sprite") {{o}}
+      .sprite(data-ng-if="question.sprite" data-ng-style="{'background-position': o, width: question.optionSize[0], height: question.optionSize[1]}")
   
